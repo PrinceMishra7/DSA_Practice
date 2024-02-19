@@ -5,7 +5,7 @@ class Solution {
 public:
     bool isPowerOfTwo(int n) {
         // method 1 -> divide by 2
-        // if(n<=0) return false;
+        if(n<=0) return false;
 
         // while(n!=0){
         //     if(n==1) return true;
@@ -27,6 +27,16 @@ public:
         // }
         // if(cnt==1) return true;
         // return false;
+
+        // find out the value of log2(n)
+       // get the ceil and floor value 
+       // if ceil and floor value are same then it is a power of 2
+
+       int cl=ceil(log2(n));
+       int flr=floor(log2(n));
+
+       if(cl==flr) return true;
+       return false;
 
 
     }
