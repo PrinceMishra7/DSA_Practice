@@ -3,7 +3,8 @@
 using namespace std;
 class Solution {
 public:
-    int findJudge(int n, vector<vector<int>>& trust) {
+
+    int findJudge(int n, vector<vector<int>>& trust){
         int ans=-1;
         vector<vector<int>> vec(n+1,vector<int>(2,0));
         for(int i=0;i<trust.size();i++){
@@ -17,6 +18,8 @@ public:
         }
         return ans;
     }
+    
+
 };
 int main(){
     
