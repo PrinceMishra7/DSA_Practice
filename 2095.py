@@ -29,3 +29,4 @@ class Solution:
         targetNode.next=targetNode.next.next
 
         return head
+         
